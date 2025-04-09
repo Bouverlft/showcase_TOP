@@ -1,5 +1,18 @@
-body {
-    font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+body {    
+    font-family: Roboto, sans-serif;
+    margin: 0;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
+
+.logoweb {
+    width: 200px;
+    height: 150px;
+    display: flex;
+    justify-items: center;
 }
 
 a {
@@ -8,42 +21,163 @@ a {
 }
 
 ul {
+    display: flex;
+    list-style: none;
     margin: 0;
     padding: 0;
-    list-style-type: none;
-}
-
-.header,
-.footer {
-    background-color: #1f2937;
-    color: #e5e7eb;
-    padding: 16px;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
     gap: 16px;
-    font-size: 24px;
-    color: #f9faf8;
+}
+
+button {
+    cursor: pointer;
+    width: max-content;
+    height: max-content;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background: royalblue;
+    border: 1px solid royalblue;
+    color: white;
+}
+
+.sign-up {
     font-weight: 900;
 }
 
-.top {
-    display: flex;
-    justify-content: space-between;
+.cta-sign {
+    font-weight: 100;
+    margin-right: 72px;
+    width: 150px;
+    border: 1px solid #f9faf8;
 }
 
-.nav_bar {
+h1 {
+    font-size: 48px;
+    font-weight: 900 ;
+    margin: 0;
+}
+
+.hero,
+.footer {
+    background-color: #1f2037;
+    color: #f9faf8;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.hero .hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 144px 16px;
+}
+
+.hero .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px 144px 32px;
+}
+
+.container h3 {
+    margin: 0;
+    font-size: 18px;
+    max-width: 600px;
+    padding: 8px 0 8px;
+    font-weight: lighter;
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    text-wrap: wrap;
+}
+
+.feature {
+    padding: 0 0 72px;
+}
+
+.content .feature {
+    background-color: #f9faf8;
+}
+
+.feature h3 {
+    display: flex;
+    flex-direction: row;
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 900;
+    justify-content: center;
+    background-color: #f9faf8;
+    margin: 0;
+    padding: 16px 0 32px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 16px;
+    text-align: center;
+    width: 200px;
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #3882f6;
+    margin-bottom: 8px;
+}
+
+.quote {
+    background-color: #e5e7eb;
+    padding: 72px 144px;
+    display: flex;
+    flex-direction: column;
+}
+
+.testimoni {
+    text-align: center;
+    font-style: italic;
+}
+
+.who {
+    text-align: end;
+    font-weight: 900;
+}
+
+.cta {
+    padding: 64px 144px 64px;
+}
+
+.cta .container {
+    background-color: #3882f6;
+    border-radius: 8px;
+    color: #e5e7eb;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 24px;
-    font-size: 18px;
-    font-weight: 600;
+    max-height: 200px;
 }
 
-.logo img{
-    width: 50px;
-    height: 50px;
+.footer {
+    padding: 32px 144px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
 }
